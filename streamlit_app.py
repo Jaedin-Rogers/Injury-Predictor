@@ -3,17 +3,17 @@ import requests
 
 st.title("Injury Risk Predictor")
 
-training_hours = st.number_input("training_hours")
-recovery_days = st.number_input("recovery_days")
-fatigue_score = st.number_input("fatigue_score")
+training_hours = st.number_input("Training Hours")
+recovery_days = st.number_input("Recovery Days")
+fatigue_score = st.number_input("Fatigue Score(1-10)")
 
 if st.button("Predict"):
     res = requests.post(
         "https://injury-predictor-api-production.up.railway.app/predict",
         json={
-            "training_hours":training_hours,
-            "recovery_days":recovery_days,
-            "fatigue_score":fatigue_score
+            "Training Hours":training_hours,
+            "Recovery Days":recovery_days,
+            "Fatigue Score(1-10)":fatigue_score
         }
     )
     result = res.json()
