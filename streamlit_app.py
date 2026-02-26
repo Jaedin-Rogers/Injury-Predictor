@@ -35,3 +35,6 @@ if st.button("Predict"):
 
     if recovery_days < 2:
         st.warning("Low recovery time detected")
+
+    if training_hours > 30:
+        st.warning("High training intensity detected")
