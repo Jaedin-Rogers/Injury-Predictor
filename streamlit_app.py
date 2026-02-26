@@ -23,7 +23,7 @@ if st.button("Predict"):
 
     st.subheader("Result")
 
-    if prediction == 1:
+    if probability == 1:
         st.error(f"⚠️ High Injury Risk ({prob:.0%})")
     else:
         st.success(f"✅ Low Injury Risk ({prob:.0%})")
