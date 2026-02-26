@@ -4,7 +4,7 @@ A machine learning web app that predicts the likelihood of sports-related injuri
 
 ## 🔗 Live Front End
 
-Try it here: Injury Predictor
+Try it here: [Injury Predictor](https://injury-predictor-api-901.streamlit.app/)
 
 🧠 How It Works
 
